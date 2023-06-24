@@ -1,5 +1,91 @@
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
 html, body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  height: 100vh;
   margin: 0;
   padding: 0;
+  font-family: "Red Hat Display", sans-serif;
+  background-image: url(./images/pattern-background-mobile.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+p {
+  font-size: 1rem;
+  color: hsl(224, 23%, 55%);
+}
+
+.container {
+  min-width: 330px;
+  max-width: 550px;
+  margin: 2em;
+  background: white;
+  text-align: center;
+  padding-bottom: 2em;
+  border-radius: 15px;
+}
+.container .subscription {
+  background-color: hsl(225, 100%, 98%);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1em;
+  margin: 1em;
+  border-radius: 15px;
+}
+.container .subscription .details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 2em 0 0.5em;
+}
+.container .subscription .details p {
+  margin: 0;
+}
+.container .subscription .change:hover {
+  color: rgba(56, 41, 224, 0.7);
+  text-decoration: none;
+}
+.container .btn {
+  width: 85%;
+  border: none;
+  background-color: hsl(245, 75%, 52%);
+  color: white;
+  font-weight: 700;
+  padding: 1em;
+  border-radius: 10px;
+  box-shadow: 2px 3px 3px hsl(224, 23%, 55%);
+  margin: 1.5em;
+}
+.container .btn:hover {
+  background-color: rgba(56, 41, 224, 0.7);
+}
+.container .cancel {
+  text-decoration: none;
+  color: hsl(224, 23%, 55%);
+  font-weight: 700;
+}
+.container .cancel:hover {
+  color: #000;
+}
+
+.header-img {
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+  color: hsl(225, 100%, 94%);
+}
+
+p b {
+  color: hsl(223, 47%, 23%);
+}
+
+@media screen and (min-width: 500px) {
+  body, html {
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }/*# sourceMappingURL=styles.css.map */
